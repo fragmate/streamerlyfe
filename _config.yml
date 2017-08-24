@@ -1,8 +1,9 @@
 title: StreamerLyfe
 description: Get started with streaming using our resources.
 
-baseurl: /
+baseurl:
 url:
+dev_environment: true
 
 google_analytics:
   account: UA-105271832-1
