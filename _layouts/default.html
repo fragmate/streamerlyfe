@@ -6,6 +6,9 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
 
+	{% if site.google_analytics %}
+		{% include google_analytics.html %}
+	{% endif %}
 	<body>
 		<div class="site-wrapper">
 			{{ content }}
