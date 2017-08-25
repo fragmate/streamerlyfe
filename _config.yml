@@ -1,7 +1,7 @@
 title: StreamerLyfe
 description: Get started with streaming using our resources.
 
-baseurl: /
+baseurl:
 url: http://streamerlyfe.com
 dev_environment: false
 
