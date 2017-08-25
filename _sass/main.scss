@@ -1,3 +1,162 @@
 @import "reset";
 @import "config";
 @import "mixins";
+
+a {
+	@include transition();
+
+	color: #6650FC;
+	outline: none;
+	text-decoration: none;
+
+	&:hover {
+		color: black;
+		text-decoration: underline;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 600;
+}
+
+::selection {
+	color: white;
+	background-color: #6650FC;
+}
+
+body {
+	$font-size: 1.1em;
+
+	color: #212121;
+	font-size: $font-size;
+	font-family: $font-primary;
+	font-weight: 400;
+	line-height: 1.65em;
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.site-header {
+	margin: 80px auto 0;
+	text-align: center;
+}
+
+.site-footer {
+	margin: 40px auto 80px;
+	text-align: center;
+
+	.social-twitter {
+		font-weight: 600;
+	}
+}
+
+.post-wrapper {
+	margin: 0 auto;
+	max-width: 42em;
+	padding: 45px;
+
+	img {
+		@include border-radius(8px);
+
+		margin: 1.5em 0;
+	}
+}
+
+.post-masthead {
+	padding-bottom: 5em;
+	padding-top: 4em;
+
+	.post-time {
+		color: #6650FC;
+		font-weight: 600;
+	}
+}
+
+.post-footer {
+	margin: 3em 0 1.5em;
+	text-align: center;
+
+	.button {
+		margin-right: 40px;
+		min-width: 150px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.share-on-twitter {
+		display: block;
+	}
+}
+
+.button {
+	@include border-radius(80px);
+
+	border: 2px solid #6650FC;
+	display: inline-block;
+	color: #6650FC;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #6650FC;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: black;
+	font-weight: 700;
+}
+
+h1 {
+	$font-size: 2.2em;
+
+	font-size: $font-size;
+	line-height: 1.25em;
+}
+
+h2 {
+	font-size: 1.4em;
+	line-height: 1.2em;
+	margin: 1.5em 0 0.83em;
+}
+
+h3 {
+	font-size: 1.1em;
+	line-height: 1.2em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 1.5em 0 0.83em;
+}
+
+p {
+	margin: 1.25em 0;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

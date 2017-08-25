@@ -1,6 +1,6 @@
 <head>
 	<title>
-		{% if page.title %} {{ page.title }}
+		{% if page.title %} {{ site.title }} | {{ page.title }}
 		{% else %} {{ site.title }}
 		{% endif %}
 	</title>
@@ -12,6 +12,10 @@
 
 	{% if site.dev_environment %}
 		<script src="//localhost:35729/livereload.js"></script>
+	{% endif %}
+
+	{% if site.typekit %}
+		{% include typekit.html %}
 	{% endif %}
 
 	{% if site.google_analytics %}
