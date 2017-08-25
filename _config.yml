@@ -3,7 +3,7 @@ description: Get started with streaming using our resources.
 
 baseurl:
 url:
-dev_environment: true
+dev_environment: false
 
 google_analytics:
   account: UA-105271832-1
