@@ -1,8 +1,8 @@
 title: StreamerLyfe
 description: Get started with streaming using our resources.
 
-baseurl:
-url: http://streamerlyfe.com
+baseurl: /streamerlyfe
+url: http://fragmate.github.io
 dev_environment: false
 
 google_analytics:
