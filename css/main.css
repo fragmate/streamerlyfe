@@ -114,6 +114,26 @@ body {
   font-weight: 600;
 }
 
+.content-wrapper {
+  margin: 80px auto;
+  max-width: 30em;
+  padding: 45px;
+}
+
+.content-wrapper .callout {
+  margin-bottom: 3em;
+}
+
+.post-list li {
+  border-bottom: 1px dotted #b9b9b9;
+  margin: 0.5em 0;
+  padding: 0.75em 0;
+}
+
+.post-list li:first-of-type {
+  padding-top: 0;
+}
+
 .post-wrapper {
   margin: 0 auto;
   max-width: 42em;
@@ -179,6 +199,13 @@ body {
   background-color: #6650FC;
   color: white;
   text-decoration: none;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.75em;
 }
 
 h1,
