@@ -103,7 +103,7 @@ table {
 
 .post-footer .button {
   margin-right: 40px;
-  min-width: 150px;
+  min-width: 200px;
 }
 
 .post-footer .button:last-of-type {
@@ -206,13 +206,13 @@ input[type="submit"] {
 }
 
 .content-wrapper {
-  margin: 80px auto;
+  margin: 40px auto 80px;
   max-width: 35em;
   padding: 45px;
 }
 
 .content-wrapper section {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .content-wrapper section:last-of-type {
@@ -237,6 +237,10 @@ input[type="submit"] {
   margin-bottom: 1em !important;
 }
 
+.newsletter-form {
+  overflow: hidden;
+}
+
 .newsletter-form input[type="email"] {
   max-width: 24em;
   float: left;
@@ -245,6 +249,11 @@ input[type="submit"] {
 
 .newsletter-form input[type="submit"] {
   float: right;
+}
+
+.newsletter-image {
+  display: block;
+  margin: 0 auto;
 }
 
 body {
