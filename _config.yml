@@ -1,9 +1,9 @@
 title: StreamerLyfe
-description: Get started with streaming using our resources.
+description: A gold mine of resources, experiences, wisdom, and tips for the streamer.
 
 baseurl:
 url: http://www.streamerlyfe.com
-dev_environment: false
+dev_environment: true
 
 google_analytics:
   account: UA-105271832-1

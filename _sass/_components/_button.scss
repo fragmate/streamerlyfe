@@ -1,0 +1,18 @@
+.button {
+	@include border-radius(80px);
+
+	border: 2px solid #6650FC;
+	display: inline-block;
+	color: #6650FC;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #6650FC;
+		color: white;
+		text-decoration: none;
+	}
+}

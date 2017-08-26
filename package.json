@@ -1,6 +1,6 @@
 {
   "name": "streamerlyfe",
-  "description": "Get started with streaming with our resources.",
+  "description": "A gold mine of resources, experiences, wisdom, and tips for the streamer.",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "^1.0.1",

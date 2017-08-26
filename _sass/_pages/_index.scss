@@ -1,0 +1,29 @@
+.content-wrapper {
+	margin: 80px auto;
+	max-width: 30em;
+	padding: 45px;
+
+	section {
+		margin-bottom: 1.5em;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.callout {
+		margin-bottom: 3em;
+	}
+}
+
+.post-list {
+	li {
+		border-bottom: 1px dotted #b9b9b9;
+		margin: 0.5em 0;
+		padding: 0.75em 0;
+
+		&:first-of-type {
+			padding-top: 0;
+		}
+	}
+}
