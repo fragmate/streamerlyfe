@@ -1,7 +1,14 @@
 .content-wrapper {
+	@include break(xs) {
+		padding: 20px;
+	}
+
+	@include break(sm) {
+		padding: 45px;
+	}
+
 	margin: 40px auto 80px;
 	max-width: 35em;
-	padding: 45px;
 
 	section {
 		margin-bottom: 3em;

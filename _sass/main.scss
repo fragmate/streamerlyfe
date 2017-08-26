@@ -12,8 +12,6 @@
 @import "_pages/index";
 
 body {
-	$font-size: 1.1em;
-
 	@include break(xs) {
 		font-size: $font-size * 0.90;
 	}
@@ -23,7 +21,6 @@ body {
 	}
 
 	color: #212121;
-	font-size: $font-size;
 	font-family: $font-primary;
 	font-weight: 400;
 	line-height: 1.65em;
@@ -89,20 +86,25 @@ h6 {
 }
 
 h1 {
-	$font-size: 2.2em;
+	@include break(xs) {
+		font-size: $font-size * 1.5;
+	}
 
-	font-size: $font-size;
+	@include break(sm) {
+		font-size: $font-size * 2;
+	}
+	
 	line-height: 1.25em;
 }
 
 h2 {
-	font-size: 1.4em;
+	font-size: $font-size * 1.2;
 	line-height: 1.2em;
 	margin: 1.5em 0 0.83em;
 }
 
 h3 {
-	font-size: 1.1em;
+	font-size: $font-size;
 	line-height: 1.2em;
 	letter-spacing: 2px;
 	text-transform: uppercase;
