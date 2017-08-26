@@ -73,7 +73,18 @@ table {
 .post-wrapper {
   margin: 0 auto;
   max-width: 42em;
-  padding: 45px;
+}
+
+@media (min-width: 300px) {
+  .post-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  .post-wrapper {
+    padding: 45px;
+  }
 }
 
 .post-wrapper img {
@@ -91,6 +102,12 @@ table {
   padding-top: 4em;
 }
 
+@media (min-width: 300px) {
+  .post-masthead {
+    padding: 2em 0 3em 0;
+  }
+}
+
 .post-masthead .post-time {
   color: #6650FC;
   font-weight: 600;
@@ -101,13 +118,20 @@ table {
   text-align: center;
 }
 
-.post-footer .button {
-  margin-right: 40px;
-  min-width: 200px;
+@media (min-width: 300px) {
+  .post-footer .button {
+    margin-bottom: 1em;
+  }
 }
 
-.post-footer .button:last-of-type {
-  margin-right: 0;
+@media (min-width: 500px) {
+  .post-footer .button {
+    margin-right: 40px;
+    min-width: 220px;
+  }
+  .post-footer .button:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .post-footer .share-on-twitter {
@@ -229,7 +253,18 @@ input[type="submit"] {
 .content-wrapper {
   margin: 40px auto 80px;
   max-width: 35em;
-  padding: 45px;
+}
+
+@media (min-width: 300px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  .content-wrapper {
+    padding: 45px;
+  }
 }
 
 .content-wrapper section {
@@ -287,7 +322,6 @@ input[type="submit"] {
 
 body {
   color: #212121;
-  font-size: 1.1em;
   font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: 400;
   line-height: 1.65em;
@@ -373,12 +407,23 @@ h6 {
 }
 
 h1 {
-  font-size: 2.2em;
   line-height: 1.25em;
 }
 
+@media (min-width: 300px) {
+  h1 {
+    font-size: 1.65em;
+  }
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
 h2 {
-  font-size: 1.4em;
+  font-size: 1.32em;
   line-height: 1.2em;
   margin: 1.5em 0 0.83em;
 }
