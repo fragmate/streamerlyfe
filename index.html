@@ -1,7 +1,8 @@
 ---
 layout: default
-description: Get started streaming with our resources.
+description: A gold mine of resources, experiences, wisdom, and tips for the streamer.
 ---
+
 <div class="content-wrapper">
 	<p class="callout">
 		Streamers need a place to find resources without having to turn rocks across the Internet. I share with you what I've found in my research within this growing industry.
@@ -23,8 +24,10 @@ description: Get started streaming with our resources.
 		<p>Receive notifications when new content is posted.</p>
 
 		<form class="newsletter-form" action="https://formspree.io/contact@streamerlyfe.com" method="POST">
-			<input autocapitalize="off" spellcheck="false" placeholder="Your email address..." type="email" name="_replyto">
-			<input class="button" type="submit" value="Sign Up">
+			<input type="hidden" name="_subject" value="New Newsletter Signup!" />
+			<input type="hidden" name="_next" value="{{ site.baseurl }}/newsletter-thanks.html" />
+			<input autocapitalize="off" spellcheck="false" placeholder="Your email address..." type="email" name="_replyto" />
+			<input class="button" type="submit" value="Sign Up" />
 		</form>
 	</section>
 </div>
