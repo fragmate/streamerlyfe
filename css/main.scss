@@ -1,0 +1,129 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "reset";
+@import "config";
+@import "mixins";
+@import "responsive";
+
+@import "_components/header";
+@import "_components/footer";
+@import "_components/post";
+@import "_components/button";
+@import "_components/form";
+
+@import "_pages/index";
+
+body {
+	@include break(xs) {
+		font-size: $font-size * 0.90;
+	}
+
+	@include break(sm) {
+		font-size: $font-size;
+	}
+
+	color: #212121;
+	font-family: $font-primary;
+	font-weight: 400;
+	line-height: 1.65em;
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a,
+div,
+input,
+section,
+article,
+aside {
+	@include box-sizing();
+}
+
+a {
+	@include transition();
+
+	color: $color-primary;
+	outline: none;
+	text-decoration: none;
+
+	&:hover {
+		color: black;
+		text-decoration: underline;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 600;
+}
+
+::selection {
+	color: white;
+	background-color: $color-primary;
+}
+
+.label {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 0.75em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: black;
+	font-weight: 700;
+}
+
+h1 {
+	@include break(xs) {
+		font-size: $font-size * 1.5;
+	}
+
+	@include break(sm) {
+		font-size: $font-size * 2;
+	}
+	
+	line-height: 1.25em;
+}
+
+h2 {
+	font-size: $font-size * 1.2;
+	line-height: 1.2em;
+	margin: 1.5em 0 0.83em;
+}
+
+h3 {
+	font-size: $font-size;
+	line-height: 1.2em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 1.5em 0 0.83em;
+}
+
+p {
+	margin: 1.25em 0;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

@@ -1,20 +1,27 @@
 title: StreamerLyfe
-description: Get started with streaming using our resources.
+description: A gold mine of resources, experiences, wisdom, and tips for the streamer.
 
-baseurl: /streamerlyfe
-url: http://fragmate.github.io
-dev_environment: false
+baseurl:
+url: http://www.streamerlyfe.com
+dev_environment: true
 
-google_analytics:
-  account: UA-105271832-1
-typekit: true
-twitter_username: StreamerLyfe
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
+keep_files: ['_site/css']
+markdown: kramdown
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-livereload
+  - jekyll-extlinks
+
+livereload: true
 
 extlinks:
   attributes: {rel: nofollow, target: _blank}
   rel_exclude: {'steamerlyfe.com'}
 
-exclude: ['README.md', 'CNAME', 'Gruntfile.js', 'package.json', 'package-lock.json', 'node_modules', 'css', '_scss']
-keep_files: ['_site/css']
-markdown: kramdown
-permalink: /:categories/:title/
+google_analytics:
+  account: UA-105271832-1
+typekit: true
+twitter_username: StreamerLyfe

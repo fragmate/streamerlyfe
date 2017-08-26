@@ -1,0 +1,56 @@
+.post-wrapper {
+	@include break(xs) {
+		padding: 20px;
+	}
+
+	@include break(sm) {
+		padding: 45px;
+	}
+
+	margin: 0 auto;
+	max-width: 42em;
+
+	img {
+		@include border-radius(8px);
+
+		margin: 1.5em 0;
+	}
+}
+
+.post-masthead {
+	@include break(xs) {
+		padding: 2em 0 3em 0;
+	}
+
+	padding-bottom: 5em;
+	padding-top: 4em;
+
+	.post-time {
+		color: #6650FC;
+		font-weight: 600;
+	}
+}
+
+.post-footer {
+	margin: 3em 0 1.5em;
+	text-align: center;
+
+	.button {
+		@include break(xs) {
+			margin-bottom: 1em;
+		}
+
+		@include break(sm) {
+			margin-right: 40px;
+			min-width: 220px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.share-on-twitter {
+		display: block;
+	}
+}

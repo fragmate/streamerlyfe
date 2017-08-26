@@ -20,7 +20,7 @@
 
 				<div class="post-footer">
 					{% if page.call_to_action %}
-						<a class="button" href="{{ page.call_to_action_link }}" rel="nofollow" target="_blank">{{page.call_to_action}}</a>
+						<a class="button" href="{{ page.call_to_action_link }}" rel="nofollow" target="_blank" title="{{ page.call_to_action }}">{{page.call_to_action}}</a>
 					{% endif %}
 					<a class="button" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Share on Twitter</a>
 				</div>
