@@ -1,6 +1,7 @@
 @import "reset";
 @import "config";
 @import "mixins";
+@import "responsive";
 
 @import "_components/header";
 @import "_components/footer";
@@ -12,6 +13,14 @@
 
 body {
 	$font-size: 1.1em;
+
+	@include break(xs) {
+		font-size: $font-size * 0.90;
+	}
+
+	@include break(sm) {
+		font-size: $font-size;
+	}
 
 	color: #212121;
 	font-size: $font-size;

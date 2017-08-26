@@ -38,9 +38,15 @@
 	overflow: hidden;
 
 	input[type="email"] {
-		max-width: 24em;
-		float: left;
-		width: 100%;
+		@include break(xs) {
+			margin-bottom: 1em;
+		}
+
+		@include break(sm) {
+			max-width: 24em;
+			float: left;
+			width: 100%;
+		}
 	}
 
 	input[type="submit"] {

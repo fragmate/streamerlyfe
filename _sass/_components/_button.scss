@@ -1,8 +1,16 @@
 .button {
 	@include border-radius(80px);
+	@include break(xs) {
+		display: block;
+		width: 100%;
+	}
+
+	@include break(md) {
+		display: inline-block;
+		width: auto;
+	}
 
 	border: 2px solid $color-primary;
-	display: inline-block;
 	color: #6650FC;
 	font-size: 13px;
 	font-weight: 600;

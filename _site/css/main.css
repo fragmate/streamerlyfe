@@ -122,13 +122,26 @@ table {
   -o-border-radius: 80px;
   border-radius: 80px;
   border: 2px solid #6650FC;
-  display: inline-block;
   color: #6650FC;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1px;
   padding: 15px 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: 300px) {
+  .button {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .button {
+    display: inline-block;
+    width: auto;
+  }
 }
 
 .button:hover {
@@ -191,6 +204,14 @@ input[type="email"] {
   padding: 0.8em 1.2em;
 }
 
+@media (min-width: 300px) {
+  input[type="text"],
+  input[type="email"] {
+    display: block;
+    width: 100%;
+  }
+}
+
 input[type="text"]:hover,
 input[type="email"]:hover {
   border-color: rgba(0, 0, 0, 0.2);
@@ -241,10 +262,18 @@ input[type="submit"] {
   overflow: hidden;
 }
 
-.newsletter-form input[type="email"] {
-  max-width: 24em;
-  float: left;
-  width: 100%;
+@media (min-width: 300px) {
+  .newsletter-form input[type="email"] {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 500px) {
+  .newsletter-form input[type="email"] {
+    max-width: 24em;
+    float: left;
+    width: 100%;
+  }
 }
 
 .newsletter-form input[type="submit"] {
@@ -264,6 +293,18 @@ body {
   line-height: 1.65em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 300px) {
+  body {
+    font-size: 0.99em;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.1em;
+  }
 }
 
 a,
