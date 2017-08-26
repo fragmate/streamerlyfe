@@ -5,19 +5,23 @@ baseurl:
 url: http://www.streamerlyfe.com
 dev_environment: true
 
-google_analytics:
-  account: UA-105271832-1
-typekit: true
-twitter_username: StreamerLyfe
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
+keep_files: ['_site/css']
+markdown: kramdown
+permalink: /:categories/:title/
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-livereload
+  - jekyll-extlinks
+
+livereload: true
 
 extlinks:
   attributes: {rel: nofollow, target: _blank}
   rel_exclude: {'steamerlyfe.com'}
 
-exclude: ['README.md', 'Gruntfile.js', 'Gemfile', 'Gemfile.lock', 'package.json', 'package-lock.json', 'node_modules', 'css', '_scss']
-keep_files: ['_site/css']
-markdown: kramdown
-permalink: /:categories/:title/
+google_analytics:
+  account: UA-105271832-1
+typekit: true
+twitter_username: StreamerLyfe
