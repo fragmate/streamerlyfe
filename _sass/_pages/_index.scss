@@ -1,10 +1,10 @@
 .content-wrapper {
 	margin: 80px auto;
-	max-width: 30em;
+	max-width: 35em;
 	padding: 45px;
 
 	section {
-		margin-bottom: 1.5em;
+		margin-bottom: 2em;
 
 		&:last-of-type {
 			margin-bottom: 0;
@@ -25,5 +25,23 @@
 		&:first-of-type {
 			padding-top: 0;
 		}
+	}
+}
+
+.site-newsletter {
+	p {
+		margin-bottom: 1em !important;
+	}
+}
+
+.newsletter-form {
+	input[type="email"] {
+		max-width: 24em;
+		float: left;
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		float: right;
 	}
 }

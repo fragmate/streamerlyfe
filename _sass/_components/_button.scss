@@ -1,7 +1,7 @@
 .button {
 	@include border-radius(80px);
 
-	border: 2px solid #6650FC;
+	border: 2px solid $color-primary;
 	display: inline-block;
 	color: #6650FC;
 	font-size: 13px;
@@ -11,7 +11,7 @@
 	text-transform: uppercase;
 
 	&:hover {
-		background-color: #6650FC;
+		background-color: $color-primary;
 		color: white;
 		text-decoration: none;
 	}

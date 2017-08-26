@@ -6,6 +6,7 @@
 @import "_components/footer";
 @import "_components/post";
 @import "_components/button";
+@import "_components/form";
 
 @import "_pages/index";
 
@@ -22,10 +23,19 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+a,
+div,
+input,
+section,
+article,
+aside {
+	@include box-sizing();
+}
+
 a {
 	@include transition();
 
-	color: #6650FC;
+	color: $color-primary;
 	outline: none;
 	text-decoration: none;
 
@@ -49,7 +59,7 @@ strong {
 
 ::selection {
 	color: white;
-	background-color: #6650FC;
+	background-color: $color-primary;
 }
 
 .label {
