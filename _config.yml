@@ -3,7 +3,6 @@ description: A gold mine of resources, experiences, wisdom, and tips for the str
 
 baseurl:
 url: http://www.streamerlyfe.com
-dev_environment: true
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
 keep_files: ['_site/css']
