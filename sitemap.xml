@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/products/ryzen-a-dream-cpu-for-streamers/</loc>
+<loc>http://streamerlyfe.com/products/ryzen-a-dream-cpu-for-streamers/</loc>
 <lastmod>2017-08-23T20:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/obs/tips/increase-viewership-with-bit-rate/</loc>
+<loc>http://streamerlyfe.com/obs/tips/increase-viewership-with-bit-rate/</loc>
 <lastmod>2017-08-27T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://streamerlyfe.com/</loc>
 </url>
 </urlset>
