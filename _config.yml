@@ -2,7 +2,7 @@ title: StreamerLyfe
 description: A gold mine of resources, experiences, wisdom, and tips for the streamer.
 
 baseurl:
-url: http://www.streamerlyfe.com
+url: http://streamerlyfe.com
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
 keep_files: ['_site/css']
@@ -21,7 +21,7 @@ extlinks:
   rel_exclude: {'steamerlyfe.com'}
 
 google_analytics:
-  account: UA-105271832-1
+  account: UA-105423302-1
 typekit: true
 
 # Front Matter defaults
