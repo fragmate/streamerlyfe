@@ -75,6 +75,9 @@ table {
     -o-border-radius: 8px;
     border-radius: 8px;
     margin: 1.5em 0; }
+  .post-wrapper ul {
+    list-style-type: square;
+    padding-left: 1em; }
 
 .post-masthead {
   padding-bottom: 5em;
@@ -100,6 +103,41 @@ table {
         margin-right: 0; } }
   .post-footer .share-on-twitter {
     display: block; }
+
+.pagination {
+  border-top: 1px solid #b9b9b9;
+  overflow: hidden; }
+  @media (min-width: 300px) {
+    .pagination {
+      margin-top: 3em;
+      padding-top: 2em;
+      text-align: center; }
+      .pagination a {
+        display: inline-block;
+        margin-bottom: 0.5em; } }
+  @media (min-width: 500px) {
+    .pagination a {
+      width: 50%; }
+    .pagination .next {
+      float: right;
+      text-align: right; }
+    .pagination .prev {
+      float: left;
+      text-align: left; } }
+  .pagination a {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px;
+    text-overflow: ellipsis; }
+    .pagination a::before {
+      position: absolute; }
+  .pagination .prev::before {
+    content: '\00AB';
+    left: 0; }
+  .pagination .next::before {
+    content: '\00BB';
+    right: 0; }
 
 .button {
   -webkit-border-radius: 80px;
@@ -296,10 +334,6 @@ em {
 
 strong {
   font-weight: 600; }
-
-ul {
-  list-style-type: square;
-  padding-left: 1em; }
 
 ::selection {
   color: white;
