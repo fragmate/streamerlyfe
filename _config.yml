@@ -24,6 +24,13 @@ google_analytics:
   account: UA-105271832-1
 typekit: true
 
+# Front Matter defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/brand-image.png
+
 # Jekyll SEO specifications
 logo: /assets/brand-image.png
 social:
