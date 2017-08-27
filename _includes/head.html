@@ -24,5 +24,10 @@
 		{% include google_analytics.html %}
 	{% endif %}
 
-	{% seo %}
+	<!-- The Jekyll dudes are implementing something to fix this awful workaround -->
+	{% capture seo %}
+		{% seo %}
+	{% endcapture %}
+
+	{{ seo | replace: "summary_large_image", "summary" }}
 </head>
