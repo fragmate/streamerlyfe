@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Ryzen: A dream CPU for streamers"
-image: "/assets/brand-image.png"
 date: 2017-08-24T00:00:00Z
 category: products
 call_to_action: "Get Ryzen"
