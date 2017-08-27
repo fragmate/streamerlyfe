@@ -8,6 +8,7 @@ group :jekyll_plugins do
 	gem 'jekyll-livereload'
 	gem 'jekyll-seo-tag'
 	gem 'jekyll-extlinks'
+	gem 'jekyll-sitemap'
 end
 gem 'wdm', '>= 0.1.0'
 
