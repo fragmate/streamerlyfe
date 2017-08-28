@@ -27,7 +27,10 @@ extlinks:
 
 google_analytics:
   account: UA-105423302-1
-typekit: true
+
+typekit:
+  account: afc1vag
+  active: true
 
 # Front Matter defaults
 defaults:
