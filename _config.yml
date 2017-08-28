@@ -2,8 +2,7 @@ title: StreamerLyfe
 description: A gold mine of resources, experiences, wisdom, and tips for the streamer.
 
 baseurl:
-url: http://www.streamerlyfe.com
-dev_environment: true
+url: https://streamerlyfe.com
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
 keep_files: ['_site/css']
@@ -14,6 +13,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-livereload
   - jekyll-extlinks
+  - jekyll-sitemap
 
 livereload: true
 
@@ -22,6 +22,22 @@ extlinks:
   rel_exclude: {'steamerlyfe.com'}
 
 google_analytics:
-  account: UA-105271832-1
+  account: UA-105423302-1
 typekit: true
-twitter_username: StreamerLyfe
+
+# Front Matter defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/brand-image.png
+
+# Jekyll SEO specifications
+logo: /assets/brand-image.png
+social:
+  name: StreamerLyfe
+  links:
+    - https://twitter.com/StreamerLyfe
+twitter:
+  username: StreamerLyfe
+google_site_verification: 3CKf3d9Wx0C23WantRTlLebG5eqx9COQ7FXHK7eUC6E
