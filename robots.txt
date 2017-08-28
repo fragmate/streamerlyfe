@@ -1,1 +1,1 @@
-Sitemap: http://streamerlyfe.com/sitemap.xml
+Sitemap: https://streamerlyfe.com/sitemap.xml
