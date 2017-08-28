@@ -6,8 +6,13 @@ url: https://streamerlyfe.com
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
 keep_files: ['_site/css']
-markdown: kramdown
 permalink: /:categories/:title/
+markdown: kramdown
+
+# Minify CSS
+sass:
+  style: compressed
+
 
 plugins:
   - jekyll-seo-tag
